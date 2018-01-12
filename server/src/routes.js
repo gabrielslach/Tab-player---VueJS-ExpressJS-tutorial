@@ -5,5 +5,5 @@ const AuthenticationControllerPolicy = require('./policies/AuthenticationControl
 module.exports = (app) => {
   app.post('/register',
     AuthenticationControllerPolicy.register,
-    AuthenticationController.register)
+    AuthenticationController.register) // registers the user by executing register fx on ACP
 }
